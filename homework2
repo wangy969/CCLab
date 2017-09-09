@@ -1,0 +1,19 @@
+int RT = A2;
+int fan = 10;
+
+void setup() {
+   pinMode(fan,OUTPUT);
+   Serial.begin(9600);
+}
+
+void loop() {
+  int temp = analogRead(RT);
+  
+  Serial.println(temp);
+  
+  if(temp<980)
+     digitalWrite(fan,HIGH);
+   else if(temp>980)
+     digitalWrite(fan,LOW);
+   delay(1000);
+}
