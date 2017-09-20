@@ -1,0 +1,72 @@
+//arduino
+
+int led_pin = 7;    
+int pot_pin = A0;  
+int pot_output;     
+
+void setup ( ) {
+pinMode(led_pin, OUTPUT);
+Serial.begin(9600);       
+} 
+
+void loop ( ) { 
+ pot_output = analogRead (pot_pin); 
+ int mapped_output = map (pot_output, 0, 1023, 0, 255);
+ Serial.println (mapped_output);    
+
+if (Serial.available ( ) > 0) {   
+ char state = Serial.read ( );  
+  
+if(state == '1')             
+{ 
+digitalWrite (led_pin, HIGH); 
+ }  
+
+if (state == '0') 
+{    
+digitalWrite (led_pin, LOW);
+ } 
+
+} 
+
+delay(50);
+
+ }
+ 
+ 
+ 
+ //processing
+ 
+ import processing.serial.*;
+import cc.arduino.*;
+import org.firmata.*;
+import processing.serial.*; 
+
+Serial myPort;
+float x ; 
+
+void setup ( ) {
+size (500,  500); 
+fill(0,0,255);
+myPort  =  new Serial (this, "/dev/tty.usbmodem1411",  9600); 
+myPort.bufferUntil ( '\n' ); } 
+
+
+void serialEvent  (Serial myPort) {
+x =  float (myPort.readStringUntil ( '\n' ) ) ; } 
+
+void draw ( ) { 
+fill(x);
+println(x);
+noStroke();
+ellipse (250,250,x,x);  
+
+   if ( mousePressed  &&  ( mouseButton  ==  LEFT ) ) { 
+    myPort.write ( '1' ) ; 
+   } 
+
+   if  ( mousePressed  &&  ( mouseButton == RIGHT ) ) { 
+    myPort.write ( '0' ) ; 
+   }
+
+}
