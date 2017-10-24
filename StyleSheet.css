@@ -1,0 +1,201 @@
+﻿body
+{
+    margin: 0px;
+    padding: 0px;
+    font: 16px 'Roboto';
+    color: #ffffff;
+    height: 1400px;
+    background-image: url('../images/background.jpg');    
+    background-attachment: fixed;
+}
+.scrolling
+{
+    margin: auto;
+    width: 900px;
+    padding: 50px;
+}
+h1, h2
+{
+    font-weight: 300;
+}
+#description
+{
+    position: fixed;
+    width: 410px;
+    z-index: 2;
+}
+#description h1
+{
+    font-size: 24px;
+    line-height: 0px;
+}
+#description h2
+{
+    font-size: 48px;
+    line-height: 53px;
+}
+#main-img
+{
+    position: fixed;
+    right: 100px;
+    z-index: 3;
+}
+
+
+#icons-tree
+{
+    position: fixed;
+    z-index: 1;
+}
+#icons-tree img
+{
+    margin: 0px 0px;
+    margin-bottom: 40px;
+}
+#icons-treeone
+{
+    position: fixed;
+    z-index: -100;
+}
+#icons-treeone img
+{
+    margin: 0px 0px;
+    margin-top: 0px;
+}
+#icons-treetwo
+{
+    position: fixed;
+    z-index: -300;
+}
+#icons-treetwo img
+{
+    margin: 0px 0px;
+    margin-top: 0px;
+}
+#icons-treethree
+{
+    position: fixed;
+    z-index: -400;
+}
+#icons-treethree img
+{
+    margin: 0px 0px;
+    margin-top: 0px;
+}
+#icons-treefour
+{
+    position: fixed;
+    z-index: -500;
+}
+#icons-treefour img
+{
+    margin: 0px 0px;
+    margin-top: 0px;
+}
+#icons-moon
+{
+    position: fixed;
+    z-index: -600;
+}
+#icons-moon img
+{
+    margin: 10px 300px;
+    top: -100px;
+}
+#icons-grass
+{
+    position: fixed;
+    z-index: 200;
+}
+#icons-grass img
+{
+    margin: 0px 0px;
+    margin-top: 550px;
+}
+#icons-rock
+{
+    position: fixed;
+    z-index: 300;
+}
+#icons-rock img
+{
+    margin: 0px 0px;
+    margin-top: 550px;
+}
+#icons-people
+{
+    position: fixed;
+    z-index: 100;
+}
+#icons-people img
+{
+    margin: 0px 0px;
+    margin-top: 410px;
+}
+
+
+
+
+#icons-back
+{
+    position: fixed;
+    z-index: 1;
+}
+#icons-back img
+{
+    margin: 30px 100px;
+}
+#icons-mid
+{
+    position: fixed;
+    left: 150px;
+    z-index: 4;
+}
+#icons-mid img
+{
+    margin: 100px;
+}
+#icons-front
+{
+    position: fixed;
+    z-index: 10;
+}
+#icons-front img
+{
+    margin: 50px;
+}
+.front1
+{
+    position: relative;
+    top: 150px;
+}
+.front3
+{
+    position: relative;
+    top: -100px;
+}
+.front4
+{
+    position: relative;
+    top: 200px;
+}
+.front6
+{
+    position: relative;
+    top: 400px;
+}
+.mid2
+{
+    position: relative;
+    top: 30px;
+}
+.mid4
+{
+    position: relative;
+    top: 100px;
+}
+.mid5
+{
+    position: relative;
+    top: -50px;
+}
