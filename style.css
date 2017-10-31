@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
+
+#container{
+	align-content: center;
+}
+body {
+    background-image: url(map2.jpg);
+
+}
+
+
+.list-group{
+	list-style-type:none;
+	padding:0; 
+	margin:0;
+}
+
+
+@keyframes yellow-fade {
+   0% {background: yellow;}
+   100% {background: none;}
+}
+
+
+.highlight {
+   animation: yellow-fade 2s ease-in 1;
+}
+
+
+
+#text-center{
+	font-family: 'Lobster', cursive;
+	font-size: 40px;
+}
+
+button{
+	font-family: 'Ubuntu Condensed', sans-serif;
+	width: 132px;
+	height: 32px;
+	color: white;
+	background-color: black;
+	border-style:none;
+	margin-top: 6px;
+	border-radius:6px;
+}
+
+#location-input{
+	border-radius:6px;
+	height: 20px;
+	border-color: black;
+}
+
+#formatted-address{
+	font-family: 'Ubuntu Condensed', sans-serif;
+	font-size: 18px;
+}
+
+#address-components{
+	font-family: 'Ubuntu Condensed', sans-serif;
+	font-size: 18px;
+}
+
+#geometry{
+	font-family: 'Ubuntu Condensed', sans-serif;
+	font-size: 18px;
+}
