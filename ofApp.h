@@ -1,8 +1,8 @@
 #pragma once
 
 #include "ofMain.h"
-
-#include "Firefly.hpp"
+#include "ofxGui.h"
+#include "CircleClass.hpp"
 
 class ofApp : public ofBaseApp{
 
@@ -22,11 +22,10 @@ class ofApp : public ofBaseApp{
 		void windowResized(int w, int h);
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
-		
-        Firefly myFirefly;
-        Firefly Fido;
-        vector<Firefly>fireflies;
-        void fireflyRestart();
+    
+        ofxPanel gui;
+        ofParameterGroup parameterGroup;
+        CircleClass circleGroup;
+        vector<CircleClass>circles;
+        ofImage fire;
 };
-
-
