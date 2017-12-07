@@ -1,8 +1,8 @@
 //
 //  CircleClass.hpp
-//  myCharmingSketch
+//  cclabfinal
 //
-//  Created by Kim Wang on 2017/11/16.
+//  Created by Kim Wang on 2017/12/4.
 //
 //
 
@@ -10,35 +10,25 @@
 #define CircleClass_hpp
 
 #include <stdio.h>
-#include <ofMain.h>
+#include "ofMain.h"
 
 class CircleClass{
 public:
-    void reset();
+    void setup();
     void draw();
     void update();
-    ofPoint force;
-    float drag;
-    bool isAttracting = true;
-    
-    ofPoint position;
-    ofPoint velocity;
-    
-    ofParameter<int> getRed(){return red ;} ;
-    
+    void Pressed(int key);
     ofParameterGroup circleParameters;
+    ofParameter<float> size;
     ofParameter<int> red;
     ofParameter<int> green;
     ofParameter<int> blue;
+    ofParameter<float> random;
+
     
-    //ofParameter<int> posX;
-    //ofParameter<int> posY;
-//    int posX ;
-//    int posY ;
-    ofParameter<int> radius;
-    
-    //ofParameter<int> velocityx;
-    //ofParameter<int> velocityy;
+    ofSoundPlayer beat;
+    float*fftSmooth;
+    int bands;
 };
 
 #endif /* CircleClass_hpp */

@@ -23,9 +23,16 @@ class ofApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
     
-        ofxPanel gui;
-        ofParameterGroup parameterGroup;
-        CircleClass circleGroup;
-        vector<CircleClass>circles;
-        ofImage fire;
+        ofSoundPlayer beat;
+    
+        float*fftSmooth;
+        int bands;
+    
+    ofxPanel gui;
+    ofParameterGroup parameterGroup;
+    CircleClass circleGroup;
+    
+    float positionx;
+    float positiony;
+    float size;
 };
